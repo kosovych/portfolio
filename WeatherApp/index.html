@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>WeatherApp</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+</head>
+<body>
+	<div class="cont">
+		<div class="location">
+			<select id="city-list">
+				<option id="703448" name="Kiev">Kiev</option>
+				<option id="709930" selected name="Dnipropetrovsk">Dnipropetrovsk</option>
+				<option id="709717" name="Donetsk">Donetsk</option>
+				<option id="698740" name="Odessa">Odessa</option>
+				<option id="690548" name="Uzhhorod">Uzhhorod</option>
+				<option id="687700" name="Zaporizhzhya">Zaporizhzhya</option>
+				<option id="702550" name="Lviv">Lviv</option>
+				<option id="710791" name="Cherkasy">Cherkasy</option>
+				<option id="689558" name="Vinnytsya">Vinnytsya</option>
+				<option id="686967" name="Zhytomyr">Zhytomyr</option>
+				<option id="707471" name="Ivano-Frankivsk">Ivano-Frankivsk</option>
+				<option id="705812" name="Kirovohrad">Kirovohrad</option>
+				<option id="702658" name="Luhansk">Luhansk</option>
+				<option id="702569" name="Lutsk">Lutsk</option>
+				<option id="700569" name="Mykolayiv">Mykolayiv</option>
+				<option id="696643" name="Poltava">Poltava</option>
+				<option id="695594" name="Rivne">Rivne</option>
+				<option id="691650" name="Ternopil">Ternopil</option>
+				<option id="692194" name="Sumy">Sumy</option>
+				<option id="706483" name="Kharkiv">Kharkiv</option>
+				<option id="706448" name="Kherson">Kherson</option>
+				<option id="706369" name="Khmelnytskyy">Khmelnytskyy</option>
+				<option id="710735" name="Chernihiv">Chernihiv</option>
+				<option id="710741" name="Chernivtsi">Chernivtsi</option>
+			</select>
+			<button id="byLocation">Location</button>
+		</div>
+		<div class="main-content">
+			<div class="days-cont">
+
+				<input type="radio" name="a" id="present-day-weather" checked>
+				<input type="radio" name="a" id="secont-day-weather">
+				<input type="radio" name="a" id="third-day-weather">
+				<input type="radio" name="a" id="fourth-day-weather">
+
+				<div id="locationTitle" class="location-title"></div>
+
+				<div class="present-day-weather days-cont-item">
+					<div class="display-weather-icon present-weather-icon"><img class="presentDayIcon" src=""></div>
+					<div class="display-temp present-weather-temp"><span id="present-weather-degree" class="present-weather-degree-numb">00</span>&nbsp;°C</div>
+					
+				</div>
+
+				<div class="secont-day-weather days-cont-item">
+					<div class="display-weather-icon secont-weather-icon"><img class="secontDayIcon" src=""></div>
+					<div class="display-temp secont-weather-temp"><span id="secont-weather-degree" class="secont-weather-degree-numb">01</span>&nbsp;°C</div>
+					
+				</div>
+				
+				<div class="third-day-weather days-cont-item">
+					<div class="display-weather-icon third-weather-icon"><img class="thirdDayIcon" src=""></div>
+					<div class="display-temp third-weather-temp"><span id="third-weather-degree" class="third-weather-degree-numb">02</span>&nbsp;°C</div>
+					
+				</div>
+				
+				<div class="fourth-day-weather days-cont-item">
+					<div class="display-weather-icon fourth-weather-icon"><img class="fourthDayIcon" src=""></div>
+					<div class="display-temp fourth-weather-temp"><span id="fourth-weather-degree" class="fourth-weather-degree-numb">03</span>&nbsp;°C</div>
+					
+				</div>
+				
+			</div>
+			<div class="days-tabs">
+
+					<div class="day-tab">
+						<label for="present-day-weather"></label>
+						<div class="day-title" id="dayTitle0">00</div>
+						<div class="day-weather-icon">
+							<img class="presentDayIcon" src="#">
+						</div>
+						<div class="wind">
+							<div class="wind-logo"></div>
+							<span id="presentDaywind">0<span>&nbsp;m/c</span></span>
+							<div id="present-wind-direction" class="wind-direction"></div>
+						</div>
+						<div class="day-temp">
+							<span id="presentDayMINtemp">00</span>&nbsp;-&nbsp;<!--
+							--><span id="presentDayMAXtemp">01</span>&nbsp;°C
+						</div>
+					</div>
+
+					<div class="day-tab">
+						<label for="secont-day-weather"></label>
+						<div class="day-title" id="dayTitle1">01</div>
+						<div class="day-weather-icon">
+							<img class="secontDayIcon" src="#">
+						</div>
+						<div class="wind">
+							<div class="wind-logo"></div>
+							<span id="secontDaywind">0<span>&nbsp;m/c</span></span>
+							<div id="secont-wind-direction" class="wind-direction"></div>
+						</div>
+						<div class="day-temp">
+							<span id="secontDayMINtemp">01</span>&nbsp;-&nbsp;<!--
+							--><span id="secontDayMAXtemp">02</span>&nbsp;°C
+						</div>
+					</div>
+
+					<div class="day-tab">
+						<label for="third-day-weather"></label>
+						<div class="day-title" id="dayTitle2">02</div>
+						<div class="day-weather-icon">
+							<img class="thirdDayIcon" src="#">
+						</div>
+						<div class="wind">
+							<div class="wind-logo"></div>
+							<span id="thirdDaywind">0<span>&nbsp;m/c</span></span>
+							<div id="third-wind-direction" class="wind-direction"></div>
+						</div>
+						<div class="day-temp">
+							<span id="thirdDayMINtemp">02</span>&nbsp;-&nbsp;<!--
+							--><span id="thirdDayMAXtemp">03</span>&nbsp;°C
+						</div>
+					</div>
+					<div class="day-tab">
+						<label for="fourth-day-weather"></label>
+						<div class="day-title" id="dayTitle3">03</div>
+						<div class="day-weather-icon">
+							<img class="fourthDayIcon" src="#"></div>
+						<div class="wind">
+							<div class="wind-logo"></div>
+							<span id="fourthDaywind">0<span>&nbsp;m/c</span></span>
+							<div id="fourth-wind-direction" class="wind-direction"></div>
+						</div>
+						<div class="day-temp">
+							<span id="fourthDayMINtemp">03</span>&nbsp;-&nbsp;<!--
+							--><span id="fourthDayMAXtemp">04</span>&nbsp;°C
+						</div>
+					</div>
+			</div>
+		</div>
+	</div>
+	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+	<script type="text/javascript" src="jquery-3.2.1.js"></script>
+	<script type="text/javascript" src="main.js"></script>
+</body>
+</html>
