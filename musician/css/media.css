@@ -1,0 +1,82 @@
+@media screen and (max-width: 890px) {
+	body > div{
+	padding-top: 0px;
+}
+h1 + p{
+	margin: 0 auto 20px auto;
+}
+	.nav{
+		display: none;
+		width: 50%;
+		height: auto;
+		left: 50%;
+		right: 0;
+	}
+	.burg-menu{
+		display: block;
+	}
+	.nav-ul{
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+	}
+	.nav-ul li a {
+	padding-top: 12px;
+	padding-bottom: 12px;
+	}
+	.discography-container{
+	width: 90%;
+	flex-direction: column;
+}
+	.description {
+		margin-top: 10px;
+    margin-bottom: 80px;
+}
+	.description button{
+		display: block;
+		margin: 0 auto;
+	}
+	.title-data{
+padding-bottom: 3px;
+}
+.title-label{
+	padding-top: 3px;
+}
+.concert-container{
+	margin-top: 0;
+	padding: 80px 10px 30px 10px;
+	display: flex;
+	justify-content: flex-start;
+	background-image: url(../img/bg-concert.png);
+	background-size: cover;
+	background-position: top center;
+}
+.concert-silde{
+	padding-bottom: 30px;
+	background-image: none;
+}
+.composition-container{
+	width: 80%;
+	height: 120vh;
+	flex-direction: column;
+	}
+.description-container:first-child::after{
+	top:100%;
+	left:50%;
+	transform: translateY(0);
+	transform: translateX(-50%);
+	border-top: 11px solid #f5f6f6;
+	border-bottom: none;
+	border-left: 13px solid transparent;
+	border-right: 13px solid transparent;
+}
+.slider p {
+	width: 70%;
+}
+.upcoming-events-flex-item {
+    flex-basis: 48%;
+   }
+  .upcoming-events-container2 .slide-h1{
+	margin-top: 80px;
+}
+}
