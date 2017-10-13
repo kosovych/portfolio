@@ -24,7 +24,9 @@ body, html, * {
 
 
 .container {
-  font-family: 'Roboto', Arial, sans-serif; 
+  font-family: 'Roboto', Arial, sans-serif;
+  max-width: 1920px;
+  margin: 0 auto;
 }
 
 
@@ -303,7 +305,11 @@ body, html, * {
 .contact-slide {
   padding-top: 100px;
   height: 55vh;
-  background-image: url("../img/getty1.png"); 
+  background-image: url("../img/getty1.png");
+  background-repeat: no-repeat;
+
+  background-size: cover;
+
 }
 
 .contact-slide .contact-slide-cont {
