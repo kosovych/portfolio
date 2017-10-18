@@ -43,7 +43,7 @@ function otherStuff(API_TYPE) {
 
 	console.log(request);
 
-	var data = new Date(2016, 1, 28);
+	var data = new Date();
 
 	console.log(data);
 
