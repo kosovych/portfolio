@@ -230,6 +230,8 @@ function otherStuff(API_TYPE) {
 
 	// https://www.weatherbit.io/static/img/icons/t01d.png
 
+	if(presentDayWeatherArr.length === 0) presentDayWeatherArr = secontDayWeatherArr;
+
 	let presentDayIcon = `https://www.weatherbit.io/static/img/icons/${presentDayWeatherArr[0].weather.icon}.png`; //адресс на картинку
 	let secontDayIcon = `https://www.weatherbit.io/static/img/icons/${secontDayWeatherArr[4].weather.icon}.png`; //адресс на картинку
 	let thirdDayIcon = `https://www.weatherbit.io/static/img/icons/${thirdDayWeatherArr[4].weather.icon}.png`; //адресс на картинку

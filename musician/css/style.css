@@ -7,7 +7,7 @@
 .content{
 	padding: 0;
 	overflow-x: hidden;
-	min-width: 360px;
+	min-width: 430px;
 }
 .content > div {
 	max-width: 2000px;
@@ -47,6 +47,9 @@
 	left:0;
 	background: rgba(0,8,12,.1);
 	z-index: 99;
+}
+.nav-bar{
+	display: none;
 }
 .burg-menu{
 	display: none;
@@ -393,6 +396,10 @@ div[class$="right"] {
 	transform: translateY(-50%);
 	cursor: pointer;
 }
+
+	.btn-left img, .btn-right img {
+		width: 100%;
+	}
 .slider .note{
 	display: inline-block;
 	vertical-align: middle;
@@ -616,6 +623,7 @@ input{
 	border-bottom: 1px solid #000;
 	margin-bottom: 10px;
 	box-sizing: border-box;
+	background-color: transparent;
 }
 input[type="button"]{
 	margin-top: 20px;

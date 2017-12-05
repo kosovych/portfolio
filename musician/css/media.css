@@ -80,3 +80,17 @@ padding-bottom: 3px;
 	margin-top: 80px;
 }
 }
+
+@media screen and (max-width: 630px) {
+	.btn-left, .btn-right {
+		width: 10%;
+		height: 140px;
+	}
+	.slider h3{
+		padding-top: calc(100vw - 550px);
+	}
+	.slider p {
+	    width: 80%;
+	}
+
+}

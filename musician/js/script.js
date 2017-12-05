@@ -2,7 +2,7 @@ var $btnTop = $("#btn-top");
 var $content = $("#content");
 var $burgMenu = $("#burg-menu");
 var $content = $("#content");
-var $nav = $(".nav");
+var $nav = $(".nav-bar");
 
 $(window).on("scroll", function(){
 	if ($(this).scrollTop() >= 100) {
